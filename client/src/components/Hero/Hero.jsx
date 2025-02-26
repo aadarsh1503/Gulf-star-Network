@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import i1 from './i1.jpg';
-import i2 from './i2.jpg';
+import i1 from './i1.png';
+import i2 from './i2.webp';
 
 
 const Hero = () => {

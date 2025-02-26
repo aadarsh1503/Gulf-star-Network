@@ -5,11 +5,11 @@
   .shadow-custom {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   }
-  .bg-Green {
-    background-color: #827127;
+  .bg-Yellow {
+    background-color: #CDA435;
   }
-  .text-Green {
-    color: #827127;  /* For text color */
+  .text-Yellow {
+    color: #CDA435;  /* For text color */
   }
   .font-sarabun {
     font-family: 'Sarabun', sans-serif;

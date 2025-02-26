@@ -1,5 +1,5 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPinterestP } from "react-icons/fa";
-import i13 from "./i13.jpg"
+import i17 from "./i17.webp"
 import test1 from "./test1.png"
 import team2 from "./team2.png"
 import team3 from "./team3.png"
@@ -35,7 +35,7 @@ export default function TeamSection() {
   <section className=" bottom-[220px] relative z-50 py-8  flex justify-center">
     <div className="bg-[#F9F9F9] rounded-2xl shadow-lg flex max-w-6xl w-full grid grid-cols-3 overflow-hidden">
       <img
-        src={i13}
+        src={i17}
         alt="Transport Services"
         className="object-cover w-full h-[250px]"
       />

@@ -9,21 +9,23 @@ import TestimonialSlider from './TestimonialSlider';
 import LogoSection from './LogoSection';
 import Hero from '../Hero/Hero';
 import Middle from './Middle';
-
+import i1 from "./i1.webp"
+import i2 from "./i2.webp"
+import i3 from "./i3.webp"
 
 const LogisticsSection = () => {
   return (
     <>
     <Hero />
   
-    <div className="flex flex-col relative z-50 gap-12 p-8 bg-white">
+    <div className="flex flex-col relative z-50  gap-12 p-8 bg-white">
   {/* Middle Component - Top Section */}
-  <div className="w-full relative bottom-32 rounded-lg flex justify-center">
+  <div className="w-full relative bottom-32 rounded-lg z-100 flex justify-center">
     <Middle />
   </div>
 
   {/* Bottom Section - Left and Right Sections */}
-  <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+  <div className="grid grid-cols-1 lg:grid-cols-2 overflow-x-hidden overflow-y-hidden items-center gap-12">
     {/* Left Side - Image Section */}
     <div className="relative flex justify-center">
       <motion.div
@@ -40,7 +42,7 @@ const LogisticsSection = () => {
           transition={{ duration: 3 }}
         >
           <img
-            src="https://www.gulfstarnetwork.com/assets/img/images/h2_about_img01.jpg"
+            src={i1}
             alt="Shipping Containers"
             className="rounded-lg w-full shadow-lg"
           />
@@ -53,7 +55,7 @@ const LogisticsSection = () => {
           className="absolute bottom-6 -right-12"
         >
           <img
-            src="https://www.gulfstarnetwork.com/assets/img/images/h2_about_img03.jpg"
+            src={i3}
             alt="Worker Handling Package"
             className="w-[250px] h-48 border-white border-6 rounded-lg shadow-2xl"
           />
@@ -66,7 +68,7 @@ const LogisticsSection = () => {
           className="absolute top-12 -right-20"
         >
           <img
-            src="https://www.gulfstarnetwork.com/assets/img/images/h2_about_img02.jpg"
+            src={i2}
             alt="Port Cranes"
             className="border-white border-6 shadow-2xl w-56 h-56 rounded-lg"
           />

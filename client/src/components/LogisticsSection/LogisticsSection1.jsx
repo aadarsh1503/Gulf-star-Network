@@ -2,7 +2,7 @@ import { AiOutlineCheckCircle } from 'react-icons/ai';
 import { FaPlaneDeparture, FaTruck } from 'react-icons/fa';
 import jcb from "./jcb.svg"
 import i5 from "./i5.svg"
-import i4 from "./i4.jpg"
+import i16 from "./i16.webp"
 export default function LogisticsSection1() {
   return (
     <section className="bg-white relative overflow-x-hidden z-50 py-12">
@@ -11,9 +11,9 @@ export default function LogisticsSection1() {
         {/* Left Side - Image with Logo Overlay */}
         <div className="relative">
           <img
-            src={i4}
+            src={i16}
             alt="Container Ship"
-            className="rounded-xl shadow-lg"
+            className="rounded-xl shadow-lg w-[450px]"
           />
           <div className="absolute top-1/2 right-8 transform -translate-y-1/2 bg-white px-6 py-12 rounded-lg ">
             <img

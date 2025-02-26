@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
-import i2 from "./i2.jpg";
+import i15 from "./i15.webp";
 
 const FixedImageSection = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -17,7 +17,7 @@ const FixedImageSection = () => {
     <div className="relative h-[100vh] overflow-hidden">
       {/* Fixed Background Section */}
       <div className="fixed inset-0 z-0">
-        <img src={i2} alt="Warehouse" className="w-full h-full object-cover" />
+        <img src={i15} alt="Warehouse" className="w-full h-full object-cover" />
       </div>
 
       {/* Content Section */}
