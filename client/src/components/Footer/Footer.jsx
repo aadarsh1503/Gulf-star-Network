@@ -1,6 +1,7 @@
 import { FaTwitter, FaWhatsapp, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaClock } from "react-icons/fa";
 import i12 from "./i12.svg"
 import i3 from "./i3.svg"
+import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-black z-50 relative text-white py-12">
@@ -16,7 +17,7 @@ const Footer = () => {
             Lorem Ipsum Dolor Sit Amet, Consect Etur Adi Pisicing Elit Sed Do Eiusmod Tempor Incidunt Ut Labore Et
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-yellow-500"><FaTwitter size={24} /></a>
+            <a href="#" className="text-white hover:text-yellow-500"><FaXTwitter size={24} /></a>
             <a href="#" className="text-white hover:text-yellow-500"><FaWhatsapp size={24} /></a>
             <a href="#" className="text-white hover:text-yellow-500"><FaInstagram size={24} /></a>
             <a href="#" className="text-white hover:text-yellow-500"><FaYoutube size={24} /></a>
@@ -53,15 +54,15 @@ const Footer = () => {
           <ul className="space-y-4">
             <li className="flex items-center">
               <FaMapMarkerAlt className="text-yellow-500 mr-3" />
-              58 Street Commercial Road Fratton, Australia
+              Office 22, Bldg 661, Rd 1208, Block 712 - Salmabad, Kingdom Of Bahrain
             </li>
             <li className="flex items-center">
               <FaPhoneAlt className="text-yellow-500 mr-3" />
-              +123 888 9999
+              +973 17491444
             </li>
             <li className="flex items-center">
               <FaClock className="text-yellow-500 mr-3" />
-              Mon – Sat: 8 am – 5 pm, Sunday: CLOSED
+              Mon – Sun: 9.00 am – 8.00 pm
             </li>
           </ul>
         </div>

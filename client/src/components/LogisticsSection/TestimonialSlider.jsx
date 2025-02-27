@@ -32,7 +32,7 @@ const testimonials = [
     rating: 3,
     message:
       "It has survived not only five centuries, but also the leap into electronic typesetting.",
-    image: testimonial3,
+    image: testimonial4,
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const testimonials = [
     rating: 4,
     message:
       "Lorem Ipsum passages, and more recently with desktop publishing software.",
-    image: testimonial4,
+    image: testimonial3,
   },
 ];
 

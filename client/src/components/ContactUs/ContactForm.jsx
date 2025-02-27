@@ -2,7 +2,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8 bg-white shadow-lg rounded-2xl">
+    <div className="max-w-7xl mx-auto p-8 bg-white shadow-custom mb-6 rounded-2xl">
       <h2 className="text-2xl font-semibold mb-6">Send Us Message</h2>
       <form className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
