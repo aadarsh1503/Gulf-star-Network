@@ -20,7 +20,7 @@ const LogisticsSection = () => {
     <>
     <Hero />
   
-    <div className="flex flex-col relative z-50  gap-12 p-8 bg-white">
+    <div className="flex flex-col relative z-50 font-sarabun  gap-12 p-8 bg-white">
   {/* Middle Component - Top Section */}
   <div className="w-full relative bottom-32 rounded-lg z-100 flex justify-center">
     <Middle />
@@ -89,10 +89,8 @@ const LogisticsSection = () => {
       <h2 className="text-[36px] font-bold w-[550px] leading-snug text-gray-900">
         Reliable & Express Logistic & Transport Solutions That Saves Your Time!
       </h2>
-      <p className="text-gray-600 w-[550px] leading-relaxed">
-        Adipiscing elit. Aliquam vulputate, tortor nec com ultri viverra
-        Suspen disse faucibus sed dolor eget Sed id urna. hiftler Group
-        ireprestantative logisticsti operator providings.
+      <p className="text-gray-600 w-[550px] text-[17px] leading-relaxed">
+      We provide fast, reliable logistics and transport solutions designed to save you time and ensure seamless delivery. Trust us for efficient and on-time services.
       </p>
 
       <div className="grid grid-cols-2 mx-auto gap-8">

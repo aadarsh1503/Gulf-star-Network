@@ -49,10 +49,28 @@ const ServiceCard = ({ icon, title, description }) => {
 
 const ServicesSection = () => {
     const services = [
-        { icon: <FaShippingFast />, title: 'Fast & Efficient Delivery', description: 'Gadipi Scing elite Aliquam vulputate tortor nec com ultra viverra.' },
-        { icon: <FaClock />, title: 'Real-Time Tracking', description: 'Gadipi Scing elite Aliquam vulputate tortor nec com ultra viverra.' },
-        { icon: <FaWarehouse />, title: 'Warehouse Storage', description: 'Gadipi Scing elite Aliquam vulputate tortor nec com ultra viverra.' },
-        { icon: <FaTrain />, title: 'Train Freight Location', description: 'Gadipi Scing elite Aliquam vulputate tortor nec com ultra viverra.' },
+      {
+        icon: <FaShippingFast />, 
+        title: 'Fast & Efficient Delivery', 
+        description: 'Speedy delivery with reliable service, ensuring your packages arrive on time.'
+    },
+    {
+        icon: <FaClock />, 
+        title: 'Real-Time Tracking', 
+        description: 'Monitor your shipment live with real-time tracking updates.'
+    },
+    {
+        icon: <FaWarehouse />, 
+        title: 'Warehouse Storage', 
+        description: 'Safe and organized warehouse storage for all your goods.'
+    },
+    {
+        icon: <FaTrain />, 
+        title: 'Train Freight Location', 
+        description: 'Track your cargo accurately with our train freight services.'
+    }
+    
+    
       ];
 
   return (
@@ -66,7 +84,7 @@ const ServicesSection = () => {
       </h1>
     </div>
     <p className="text-gray-600 mt-12 max-w-md">
-      Adipiscing elit. Aliquam vulputate, tortor nec com viverra uspen disse faucibus sed dolor eget Sed id urna.
+    Providing seamless logistics solutions for leading global companies with efficiency and precision.
     </p>
   </div>
 

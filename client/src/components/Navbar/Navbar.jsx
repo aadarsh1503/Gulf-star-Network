@@ -1,6 +1,6 @@
-import { FaPhoneAlt, FaFacebookF, FaTwitter, FaWhatsapp, FaInstagram, FaYoutube, FaEnvelope, FaClock, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaFacebookF, FaTwitter, FaWhatsapp, FaInstagram, FaYoutube, FaEnvelope, FaClock, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-
+import logo from "./logo.png"
 const Navbar = () => {
   return (
     <header>
@@ -9,28 +9,38 @@ const Navbar = () => {
         <div className="text-[#A6A6A6] text-[15px] max-w-7xl mx-auto text-sm py-3 px-6 flex justify-between items-center">
           <div className="flex items-center gap-6">
             
-            <span className="flex items-center hover:text-white gap-1">
-              <FaEnvelope className='text-white' /> bill.sanders@example.com
-            </span>
+          <a href="mailto:info@gulfstarnetwork.com" class="flex items-center hover:text-white gap-1">
+  <FaEnvelope className="text-white" /> info@gulfstarnetwork.com
+</a>
+
             <span className="flex items-center hover:text-white gap-1">
               <FaClock className='text-white' /> Mon – Sun: 9.00 am – 8.00 pm
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <span>Follow Us On:</span>
-            <FaFacebookF className="cursor-pointer text-white hover:text-[#A6A6A6]" />
-            <FaXTwitter className="cursor-pointer text-white hover:text-[#A6A6A6]" />
-            <FaWhatsapp className="cursor-pointer text-white hover:text-[#A6A6A6]" />
-            <FaInstagram className="cursor-pointer text-white hover:text-[#A6A6A6]" />
-            <FaYoutube className="cursor-pointer text-white hover:text-[#A6A6A6]" />
-          </div>
+  <span>Follow Us On:</span>
+  <a href="https://www.facebook.com/GulfStarNetwork" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF className="cursor-pointer text-white hover:text-[#A6A6A6]" />
+  </a>
+  <a href="https://twitter.com/gulfstarnetwork" target="_blank" rel="noopener noreferrer">
+    <FaXTwitter className="cursor-pointer text-white hover:text-[#A6A6A6]" />
+  </a>
+  <a href="https://www.linkedin.com/in/gulf-star-networks-a7bb4a256/" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin className="cursor-pointer text-white hover:text-[#A6A6A6]" />
+  </a>
+  <a href="https://www.instagram.com/gulf_star_network/" target="_blank" rel="noopener noreferrer">
+    <FaInstagram className="cursor-pointer text-white hover:text-[#A6A6A6]" />
+  </a>
+ 
+</div>
+
         </div>
       </div>
 
       {/* Bottom Navbar - Transparent Background */}
-      <div className="relative z-100 font-sarabun bg-opacity-0 max-w-7xl mx-auto text-white py-4 px-6 flex justify-between items-center">
+      <div className="relative z-100 font-sarabun bg-opacity-0 max-w-7xl mx-auto text-white  px-6 flex justify-between items-center">
         <div className="flex items-center gap-12">
-          <div className="text-2xl font-bold">logistex</div>
+          <img src={logo} className='w-[152px] h-auto z-50 relative' />
           <nav className="flex gap-8 ml-10">
             <a href="/" className="hover:text-yellow-400">Home</a>
             <a href="/about-us" className="hover:text-yellow-400">About Us</a>

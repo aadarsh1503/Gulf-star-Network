@@ -24,7 +24,7 @@ const faqData = [
   },
   {
     question: 'What options for logistics plans are available?',
-    answer: 'Gorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam pellentesque nec nam nulla facilisi etiam aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit empor incididunt ut labore et dolore magna uam pellentesque nec nam nulla facilisi etiam aliquam.',
+    answer: 'Available Logistics Plans: Basic ($15/Month): 5000 User Activities, Unlimited Access, No Hidden Charges, 3 Updates, Figma Source. Standard ($49/Month): Includes Basic features with advanced support. Enterprise ($99/Month): Full premium access with all features and priority service.',
   },
   
 ];

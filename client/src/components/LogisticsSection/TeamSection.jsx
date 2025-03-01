@@ -44,7 +44,7 @@ export default function TeamSection() {
           Would you Like to get The Best Transport Services?
         </h2>
         <p className="text-gray-600 w-[500px]">
-          Dapibus interdum senectus malesuada est nec morbi cursus.
+        We offer efficient and reliable solutions to meet your transportation needs, ensuring smooth and timely deliveries.
         </p>
       </div>
       <div className="flex items-center justify-center relative left-20 p-8">
@@ -66,7 +66,7 @@ export default function TeamSection() {
   </div>
 
   <p class="text-gray-500 max-w-lg text-left">
-    Adipiscing elit. Aliquam vulputate, tortor nec conviverra uspen disse faucibus sed dolor eget Sed id urna.
+  Our skilled and experienced team is dedicated to delivering top-notch logistics solutions, ensuring efficiency and customer satisfaction.
   </p>
 </div>
 

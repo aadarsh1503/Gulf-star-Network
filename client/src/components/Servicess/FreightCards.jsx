@@ -7,48 +7,48 @@ import i5 from "./i5.jpg"
 import i6 from "./i6.jpg"
 const FreightCards = () => {
   const cards = [
-    {
+       {
       id: 1,
       title: 'Ocean Freight',
-      description: 'Road transpo arer tation cruicial follw roley Logistins coordinated trans portan the countries destination.',
+      description: 'Ocean shipping ensures safe delivery across seas, handling logistics and destination coordination.',
       icon: <FaShip className="text-white text-5xl" />,
       image: i1
     },
     {
       id: 2,
       title: 'Road Freight',
-      description: 'Road transpo arer tation cruicial follw roley Logistins coordinated trans portan the countries destination.',
+      description: 'Road transport is essential for efficient delivery, managing logistics across various destinations.',
       icon: <FaTruck className="text-white text-5xl" />,
       image: i2
     },
     {
       id: 3,
       title: 'Air Freight',
-      description: 'Road transpo arer tation cruicial follw roley Logistins coordinated trans portan the countries destination.',
+      description: 'Air shipping provides fast delivery, ensuring logistics coordination and timely arrival worldwide.',
       icon: <FaPlane className="text-white text-5xl" />,
       image: i3
     },
     {
-        id: 4,
-        title: 'Train Freight',
-        description: 'Road transportation is crucial, following key logistics and coordinating transportation to the country’s destination.',
-        icon: <FaTrain className="text-white text-5xl" />,
-        image: i4
-      },
-      {
-        id: 5,
-        title: 'Modern Storage',
-        description: 'Road transportation is crucial, following key logistics and coordinating transportation to the country’s destination.',
-        icon: <FaWarehouse className="text-white text-5xl" />,
-        image: i5
-      },
-      {
-        id: 6,
-        title: 'House Shifting',
-        description: 'Road transportation is crucial, following key logistics and coordinating transportation to the country’s destination.',
-        icon: <FaHome className="text-white text-5xl" />,
-        image: i6
-      },
+      id: 4,
+      title: 'Train Freight',
+      description: 'Rail transport offers reliable logistics, coordinating deliveries to national and international destinations.',
+      icon: <FaTrain className="text-white text-5xl" />,
+      image: i4
+    },
+    {
+      id: 5,
+      title: 'Modern Storage',
+      description: 'Advanced storage facilities ensure safe and organized handling, optimizing logistics for all shipments.',
+      icon: <FaWarehouse className="text-white text-5xl" />,
+      image: i5
+    },
+    {
+      id: 6,
+      title: 'House Shifting',
+      description: 'Comprehensive home relocation services, ensuring smooth transportation and efficient logistics.',
+      icon: <FaHome className="text-white text-5xl" />,
+      image: i6
+    }
       
   ];
 
@@ -59,7 +59,7 @@ const FreightCards = () => {
           <div className="relative group ">
             <img src={card.image} alt={card.title} className="w-full h-64 p-4 rounded-[20px] object-cover transition-transform duration-500 group-hover:brightness-50" />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <button className="text-white bg-black bg-opacity-70 px-4 py-2 bottom-18 relative rounded-lg">Read More</button>
+              {/* <button className="text-white bg-black bg-opacity-70 px-4 py-2 bottom-18 relative rounded-lg">Read More</button> */}
             </div>
           
           <div className="p-6 text-center">
