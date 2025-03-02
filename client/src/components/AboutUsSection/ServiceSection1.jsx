@@ -22,7 +22,7 @@ const ServiceSection = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center gap-8 p-8">
       {/* Left Section: Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full lg:w-full relative left-24">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full lg:w-full relative left-0 lg:left-24">
         {services.map((service, index) => (
           <div
             key={index}

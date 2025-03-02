@@ -32,7 +32,7 @@ export default function TeamSection() {
     <div className="bg-[#F9F9F9] relative-z-50">
    
   <section className="bg-[#F9F9F9] relative z-100   py-[60px]">
-  <section className=" bottom-[220px] relative z-50 py-8  flex justify-center">
+  <section className=" bottom-[220px] lg:flex hidden relative z-50 py-8  flex justify-center">
     <div className="bg-[#F9F9F9] rounded-2xl shadow-lg flex max-w-6xl w-full grid grid-cols-3 overflow-hidden">
       <img
         src={i17}
@@ -57,6 +57,36 @@ export default function TeamSection() {
       </div>
     </div>
   </section>
+  <section class="relative lg:hidden  z-50 py-8 flex justify-center bottom-[220px]">
+  <div class="bg-[#F9F9F9] rounded-2xl shadow-lg max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 overflow-hidden">
+    <img
+      src={i17}
+      alt="Transport Services"
+      class="object-cover w-full h-[250px]"
+    />
+
+    <div class="p-8 flex flex-col justify-center md:relative md:left-10">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:w-[440px]">
+        Would you Like to get The Best Transport Services?
+      </h2>
+      <p class="text-gray-600 md:w-[500px]">
+        We offer efficient and reliable solutions to meet your transportation needs, ensuring smooth and timely deliveries.
+      </p>
+    </div>
+
+    <div class="flex items-center justify-center p-8 md:relative md:left-20">
+      <a
+        href="#"
+        class="inline-flex items-center bg-black text-[#F9F9F9] px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+      >
+        Read More ↗
+      </a>
+    </div>
+  </div>
+
+
+  {/* team section */}
+</section>
   <div className="max-w-7xl mx-auto px-6 relative text-center">
 
   <div class="flex justify-between -mt-32 mb-10 items-start">
@@ -65,7 +95,7 @@ export default function TeamSection() {
     <h2 class="text-4xl font-bold text-gray-900 mb-6">Meet Our Executive People</h2>
   </div>
 
-  <p class="text-gray-500 max-w-lg text-left">
+  <p class="text-gray-500 max-w-lg lg:flex hidden text-left">
   Our skilled and experienced team is dedicated to delivering top-notch logistics solutions, ensuring efficiency and customer satisfaction.
   </p>
 </div>
@@ -73,7 +103,7 @@ export default function TeamSection() {
  
 <div className="relative bg-[#F9F9F9]  z-50">
 
-  <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="relative grid grid-cols-1 lg:ml-0 ml-6 md:grid-cols-2 lg:grid-cols-4 gap-8">
     {teamMembers.map((member, index) => (
       <div
         key={index}

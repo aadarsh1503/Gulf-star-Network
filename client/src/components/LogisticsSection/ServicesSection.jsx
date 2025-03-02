@@ -77,7 +77,7 @@ const ServicesSection = () => {
     <div className='bg-[#F6F6F6] relative z-50'>
 <section className="py-16 max-w-7xl mx-auto ">
   <div className="flex justify-between max-w-5xl mx-auto items-start mb-12">
-    <div className="text-left">
+    <div className="text-left lg:p-0 p-4">
       <h2 className="text-lg font-semibold text-yellow-600">OUR BEST SERVICES</h2>
       <h1 className="mt-2 text-3xl font-bold w-[350px] lg:w-[450px] text-gray-800">
         Managing Logistics For World’s Multinational Companies
@@ -88,7 +88,7 @@ const ServicesSection = () => {
     </p>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="grid grid-cols-1 lg|:ml-0 ml-8 md:grid-cols-2 lg:grid-cols-4 gap-8">
     {services.map((service, index) => (
       <ServiceCard key={index} {...service} />
     ))}

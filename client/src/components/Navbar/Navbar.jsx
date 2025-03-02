@@ -71,14 +71,14 @@ const Navbar = () => {
       {/* Bottom Navbar (Mobile Screens) */}
       <div>
       {/* Mobile Navbar */}
-      <div className="bottom-0 left-0 right-0 z-120 relative text-black shadow-md flex justify-between items-center p-3 lg:hidden">
+      <div className="bottom-0 left-0 right-0 z-120 relative text-black shadow-md flex justify-between items-center p-1  lg:hidden">
         {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="h-8" />
+          <img src={logo} alt="Logo" className="h-16 w-auto" />
         </a>
 
         {/* Hamburger Icon */}
-        <button onClick={() => setIsMenuOpen(true)} className="text-2xl text-white z-150 relative">
+        <button onClick={() => setIsMenuOpen(true)} className="text-2xl text-white mr-4 z-150 relative">
           <FaBars />
         </button>
       </div>

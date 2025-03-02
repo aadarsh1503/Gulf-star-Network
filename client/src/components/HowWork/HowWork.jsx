@@ -36,7 +36,7 @@ const HowWork = () => {
 
   return (
     <div>
-    <section className="bg-white relative z-50 h-screen text-white py-16">
+    <section className="bg-white relative z-50 h-[1400px] lg:h-screen text-white py-16">
       <style>{`
         @keyframes spinX {
           0% { transform: rotate3d(1, 0, 0, 0deg); }
@@ -63,7 +63,7 @@ const HowWork = () => {
             <h3 className="mt-6 text-xl text-black font-semibold">{step.title}</h3>
             <p className="mt-2 text-black font-sarabun text-[17px] w-56">{step.description}</p>
             {index < steps.length - 1 && (
-              <img src={step.arrow} alt="arrow" className="absolute top-1/3 right-[-70px] transform -translate-y-1/2" />
+              <img src={step.arrow} alt="arrow" className="absolute top-1/3 lg:flex hidden right-[-70px] transform -translate-y-1/2" />
             )}
           </div>
         ))}

@@ -6,31 +6,36 @@ const FixedImageSection = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
+    // Body overflow hidden to stop right scroll
+    document.documentElement.style.overflowX = "hidden";
     document.body.style.overflowX = "hidden";
+
     return () => {
-      document.body.style.overflowX = "auto"; // Cleanup effect
+      document.documentElement.style.overflowX = "auto";
+      document.body.style.overflowX = "auto";
     };
   }, []);
 
-  const handleVideoOpen = () => {
-    setShowVideo(true);
-  };
-
-  const handleCloseVideo = () => {
-    setShowVideo(false);
-  };
+  const handleVideoOpen = () => setShowVideo(true);
+  const handleCloseVideo = () => setShowVideo(false);
 
   return (
-    <div className="relative h-[100vh] overflow-hidden overflow-x-hidden">
+    <div className="relative h-[100vh] overflow-hidden">
       {/* Fixed Background Section */}
-      <div className="fixed inset-0 z-0 w-screen h-screen">
-        <img src={i15} alt="Warehouse" className="w-full h-full object-cover" />
+      <div className="fixed top-0 left-0 z-0 w-full h-full">
+        <img
+          src={i15}
+          alt="Warehouse"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Content Section */}
       <div className="relative z-10 flex items-center h-[100vh] bg-gradient-to-r from-black/60 to-transparent text-white">
         <div className="ml-12 max-w-xl">
-          <p className="text-sm uppercase mb-4">Customer Teams & An Agile Services</p>
+          <p className="text-sm uppercase mb-4">
+            Customer Teams & An Agile Services
+          </p>
           <h1 className="text-5xl font-bold leading-tight">
             We Provide The Best And Fastest Courier Services Nowadays
           </h1>
@@ -39,7 +44,7 @@ const FixedImageSection = () => {
         {/* Play Button with Wave Animation */}
         <button
           onClick={handleVideoOpen}
-          className="absolute right-48 flex items-center justify-center w-20 h-20 rounded-full bg-white cursor-pointer hover:bg-white/30 transition-all animate-pulse"
+          className="absolute lg:right-48 right-38 lg:bottom-[300px] bottom-24 flex items-center justify-center w-20 h-20 rounded-full bg-white cursor-pointer hover:bg-white/30 transition-all animate-pulse"
         >
           <span className="absolute inline-block w-32 h-32 rounded-full border-4 border-yellow-500 animate-[ping_2s_infinite]" />
           <FaPlay className="text-yellow-500 text-3xl relative z-10" />

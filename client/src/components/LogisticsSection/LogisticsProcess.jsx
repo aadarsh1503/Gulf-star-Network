@@ -36,7 +36,7 @@ const LogisticsProcess = () => {
 
   return (
     <div>
-    <section className="bg-[#CDA435] relative z-50 h-screen text-white py-16">
+    <section className="bg-[#CDA435] relative z-50 lg:h-screen h-[1400px] text-white py-16">
       <style>{`
         @keyframes spinX {
           0% { transform: rotate3d(1, 0, 0, 0deg); }
@@ -63,7 +63,7 @@ const LogisticsProcess = () => {
             <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
             <p className="mt-2 text-sm">{step.description}</p>
             {index < steps.length - 1 && (
-              <img src={step.arrow} alt="arrow" className="absolute top-1/3 right-[-70px] transform -translate-y-1/2" />
+              <img src={step.arrow} alt="arrow" className="absolute top-1/3 lg:flex hidden right-[-70px] transform -translate-y-1/2" />
             )}
           </div>
         ))}

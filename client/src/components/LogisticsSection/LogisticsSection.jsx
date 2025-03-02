@@ -36,7 +36,7 @@ const LogisticsSection = () => {
         transition={{ duration: 3 }}
         className="relative w-full max-w-lg"
       >
-        <div className="absolute inset-0 w-72 h-80 bg-pink-100 rounded-lg -z-10"></div>
+        <div className="absolute inset-0 w-72   h-80 bg-pink-100 rounded-lg -z-10"></div>
 
         <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -46,7 +46,7 @@ const LogisticsSection = () => {
           <img
             src={i1}
             alt="Shipping Containers"
-            className="rounded-lg w-full shadow-lg"
+            className="rounded-lg w-full  shadow-lg"
           />
         </motion.div>
 
@@ -54,12 +54,12 @@ const LogisticsSection = () => {
           initial={{ y: 300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 3, delay: 0.5, ease: "easeOut" }}
-          className="absolute bottom-6 -right-12"
+          className="absolute -bottom-26 lg:bottom-6 -right-12"
         >
           <img
             src={i3}
             alt="Worker Handling Package"
-            className="w-[250px] h-48 border-white border-6 rounded-lg shadow-2xl"
+            className="w-[250px] lg:h-48  lg:flex hidden border-white border-6 rounded-lg shadow-2xl"
           />
         </motion.div>
 
@@ -72,7 +72,7 @@ const LogisticsSection = () => {
           <img
             src={i2}
             alt="Port Cranes"
-            className="border-white border-6 shadow-2xl w-56 h-56 rounded-lg"
+            className="border-white lg:flex hidden border-6  shadow-2xl w-56 h-56 rounded-lg"
           />
         </motion.div>
       </motion.div>
@@ -85,8 +85,8 @@ const LogisticsSection = () => {
       transition={{ duration: 0.8 }}
       className="space-y-6"
     >
-      <p className="text-yellow-600 font-semibold">RELIABLE LOGISTIC & TRANSPORT SOLUTIONS</p>
-      <h2 className="text-[36px] font-bold w-[550px] leading-snug text-gray-900">
+      <p className="text-yellow-600 lg:p-0 font-semibold">RELIABLE LOGISTIC & TRANSPORT SOLUTIONS</p>
+      <h2 className="text-[36px] font-bold w-full lg:w-[550px] leading-snug text-gray-900">
         Reliable & Express Logistic & Transport Solutions That Saves Your Time!
       </h2>
       <p className="text-gray-600 w-[550px] text-[17px] leading-relaxed">
@@ -114,14 +114,14 @@ const LogisticsSection = () => {
         </div>
 
         {/* Right Column */}
-        <ul className="space-y-4 relative right-10">
+        <ul className="space-y-4 relative right-4 lg:right-10">
           {[
             'Quality Control System',
             '100% Satisfaction Guarantee',
             'Professional and Qualified',
             'Safe, Reliable And Express',
           ].map((item, index) => (
-            <li key={index} className="flex text-lg items-center gap-3 text-black">
+            <li key={index} className="flex text-lg lg:w-full w-[170px] items-center gap-3 text-black">
               <FaCheckCircle className="text-yellow-600 text-xl shrink-0" />
               {item}
             </li>
@@ -129,7 +129,7 @@ const LogisticsSection = () => {
         </ul>
       </div>
 
-      <button className="bg-yellow-600 text-white py-3 px-6 rounded-lg flex items-center gap-2 hover:bg-yellow-700 transition">
+      <button className="bg-yellow-600 text-white py-3 px-6 lg:ml-0 ml-12 rounded-lg flex items-center gap-2 hover:bg-yellow-700 transition">
         Explore Our Services <span>&#8594;</span>
       </button>
     </motion.div>

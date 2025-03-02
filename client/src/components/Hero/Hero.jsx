@@ -15,8 +15,8 @@ const Hero = () => {
       setTimeout(() => {
         setImageIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
         setZoom(true);
-      }, 2000); // Smooth zoom-out before switching
-    }, 8000); // Total duration (4s visible + 2s transition)
+      }, 2000); 
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);

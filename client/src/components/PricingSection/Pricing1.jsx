@@ -38,7 +38,7 @@ const Pricing1 = () => {
   ];
 
   return (
-    <div className='bg-gray-100 font-sarabun'>
+    <div className='bg-gray-100 font-sarabun p-4 lg:p-0 '>
     <div className="py-12 flex justify-center max-w-5xl mx-auto items-center">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {plans.map((plan, index) => (
