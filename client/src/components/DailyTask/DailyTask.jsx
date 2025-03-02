@@ -20,6 +20,8 @@ const DailyTask = () => {
     Any_issues_or_ideas_you_would_like_to_share: "",
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -39,6 +41,30 @@ const DailyTask = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    setIsSubmitted(true);
+    
+    // Reset form to initial state
+    setFormData({
+      Date: "",
+      Team_No: "",
+      Name: "",
+      Employee_ID: "",
+      No_of_calls: "",
+      designation: "",
+      No_of_Hiring: "",
+      Feed_post_LinkJob_Post: "",
+      Feed_post_LinkSpecific_one: "",
+      Updated_in_Group: false,
+      Updated_the_Sheet: false,
+      Update_email_sent: false,
+      Attended_the_meet: false,
+      Mention_any_additionalTask_you_want_to_add: "",
+      Any_issues_or_ideas_you_would_like_to_share: "",
+    });
+  
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 400000);
   };
 
   const handleCancel = () => {
@@ -62,47 +88,48 @@ const DailyTask = () => {
   };
 
   return (
-    <div className="layout-container">
-      <div className="form-container">
-        <div className="form-content">
-          <h1>Daily Task Form</h1>
-          <form onSubmit={handleSubmit} className="form">
-            <div className="form-row md">
-              <input
-                type="text"
-                name="Date"
-                value={formData.Date}
-                onChange={handleInputChange}
-                placeholder="Date"
-                required
-              />
-              <input
-                type="text"
-                name="Team_No"
-                value={formData.Team_No}
-                onChange={handleInputChange}
-                placeholder="Team No"
-                required
-              />
-            </div>
-            <div className="form-row md">
-              <input
-                type="text"
-                name="Name"
-                value={formData.Name}
-                onChange={handleInputChange}
-                placeholder="Name"
-                required
-              />
-              <input
-                type="text"
-                name="Employee_ID"
-                value={formData.Employee_ID}
-                onChange={handleInputChange}
-                placeholder="Employee ID"
-                required
-              />
-            </div>
+<div className={`layout-container relative ${isSubmitted ? ' bg-[#7e7e7e]' : 'form layout-container relative'}`}>
+
+        <div className="form-container">
+          <div className="form-content layout-container relative">
+            <h1 onSubmit={handleSubmit} className={`relative ${isSubmitted ? 'blur  ' : 'form'} z-10`}>Daily Task Form</h1>
+            <form onSubmit={handleSubmit} className={`relative ${isSubmitted ? 'blur h-[600px] bg-red-400' : 'form layout-container relative'} z-10`}>
+              <div className="form-row md">
+                <input
+                  type="text"
+                  name="Date"
+                  value={formData.Date}
+                  onChange={handleInputChange}
+                  placeholder="Date"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Team_No"
+                  value={formData.Team_No}
+                  onChange={handleInputChange}
+                  placeholder="Team No"
+                  required
+                />
+              </div>
+              <div className="form-row md">
+                <input
+                  type="text"
+                  name="Name"
+                  value={formData.Name}
+                  onChange={handleInputChange}
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Employee_ID"
+                  value={formData.Employee_ID}
+                  onChange={handleInputChange}
+                  placeholder="Employee ID"
+                  required
+                />
+              </div>
             <div className="form-row md">
               <input
                 type="text"
@@ -182,13 +209,13 @@ const DailyTask = () => {
       />
 
       <div
-        className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
+        className={`w-6 h-6 shrink-0 rounded-full border-2 flex items-center justify-center ${
           formData[item.id] ? 'bg-blue-500 border-blue-500' : 'border-gray-400'
         }`}
       >
         {formData[item.id] && (
           <svg
-            className="w-4 h-4 text-white"
+            className="w-4 h-4 shrink-0  text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -245,8 +272,21 @@ const DailyTask = () => {
               </button>
             </div>
           </form>
+          {isSubmitted && (
+    <div className="absolute inset-0 flex h-screen items-center justify-center bg-black/30 z-20">
+      <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+        <h2 className="text-2xl font-bold mb-4">Form Successfully Submitted!</h2>
+        <button 
+          onClick={() => setIsSubmitted(false)}
+          className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+          Close
+        </button>
+      </div>
+    </div>
+  )}
         </div>
       </div>
+        
     </div>
   );
 };

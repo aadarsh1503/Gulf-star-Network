@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaPlay } from "react-icons/fa";
 import i15 from "./i15.webp";
 
 const FixedImageSection = () => {
   const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflowX = "hidden";
+    return () => {
+      document.body.style.overflowX = "auto"; // Cleanup effect
+    };
+  }, []);
 
   const handleVideoOpen = () => {
     setShowVideo(true);
@@ -14,9 +21,9 @@ const FixedImageSection = () => {
   };
 
   return (
-    <div className="relative h-[100vh] overflow-hidden">
+    <div className="relative h-[100vh] overflow-hidden overflow-x-hidden">
       {/* Fixed Background Section */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 z-0 w-screen h-screen">
         <img src={i15} alt="Warehouse" className="w-full h-full object-cover" />
       </div>
 
@@ -52,7 +59,7 @@ const FixedImageSection = () => {
             <iframe
               width="100%"
               height="600"
-              src="https://youtu.be/1iIZeIy7TqM?si=LEqFRr3UvSxSI4oq"
+              src="https://www.youtube.com/embed/1iIZeIy7TqM"
               title="YouTube video player"
               frameBorder="0"
               allow="autoplay; encrypted-media"

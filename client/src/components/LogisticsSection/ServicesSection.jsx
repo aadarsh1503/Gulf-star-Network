@@ -79,11 +79,11 @@ const ServicesSection = () => {
   <div className="flex justify-between max-w-5xl mx-auto items-start mb-12">
     <div className="text-left">
       <h2 className="text-lg font-semibold text-yellow-600">OUR BEST SERVICES</h2>
-      <h1 className="mt-2 text-3xl font-bold w-[450px] text-gray-800">
+      <h1 className="mt-2 text-3xl font-bold w-[350px] lg:w-[450px] text-gray-800">
         Managing Logistics For World’s Multinational Companies
       </h1>
     </div>
-    <p className="text-gray-600 mt-12 max-w-md">
+    <p className="text-gray-600 lg:flex hidden mt-12 max-w-md">
     Providing seamless logistics solutions for leading global companies with efficiency and precision.
     </p>
   </div>

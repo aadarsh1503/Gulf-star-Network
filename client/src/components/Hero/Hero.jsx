@@ -57,10 +57,10 @@ const Hero = () => {
       <div className="relative z-10 flex items-center h-full -mt-10 px-8 sm:px-16 lg:px-10 max-w-2xl text-white">
         <div className="transition-opacity duration-2000 ease-in-out" key={imageIndex}>
           <h1
-            className="text-4xl sm:text-6xl w-[700px] font-bold leading-tight"
+            className="text-4xl sm:text-6xl w-[350px] lg:w-[700px] font-bold leading-tight"
             dangerouslySetInnerHTML={{ __html: images[imageIndex].heading }}
           />
-          <p className="mt-4 text-lg w-[600px] opacity-80">{images[imageIndex].text}</p>
+          <p className="mt-4 text-lg lg:w-[600px] w-[300px] opacity-80">{images[imageIndex].text}</p>
           <a
             href="#"
             className="inline-flex items-center mt-8 px-6 py-3 border border-white rounded-lg text-white hover:bg-white hover:text-black transition duration-300"
