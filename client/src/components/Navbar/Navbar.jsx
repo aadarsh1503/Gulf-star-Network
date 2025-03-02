@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaFacebookF, FaTwitter, FaWhatsapp,FaHome, FaCogs, FaPhone, FaInfoCircle, FaBars, FaTimes, FaInstagram, FaYoutube, FaEnvelope, FaClock, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import { FaPhoneAlt, FaFacebookF, FaTwitter, FaWhatsapp,FaHome, FaCogs, FaPhone, FaInfoCircle, FaBars, FaTimes, FaInstagram, FaYoutube, FaEnvelope, FaClock, FaMapMarkerAlt, FaLinkedin, FaUsers, FaQuestionCircle, FaDollarSign, FaTools } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import logo from "./logo.png"
 import { useState } from 'react';
@@ -89,19 +89,31 @@ const Navbar = () => {
           <FaTimes />
         </button>
         <div className="flex flex-col mt-16 space-y-6 pl-8">
-          <a href="/" className="flex items-center text-lg">
-            <FaHome className="mr-3" /> Home
-          </a>
-          <a href="/services" className="flex items-center text-lg">
-            <FaCogs className="mr-3" /> Services
-          </a>
-          <a href="/contact" className="flex items-center text-lg">
-            <FaPhone className="mr-3" /> Contact
-          </a>
-          <a href="/about-us" className="flex items-center text-lg">
-            <FaInfoCircle className="mr-3" /> About
-          </a>
-        </div>
+  <a href="/" className="flex items-center text-lg">
+    <FaHome className="mr-3" /> Home
+  </a>
+  <a href="/services" className="flex items-center text-lg">
+    <FaCogs className="mr-3" /> Services
+  </a>
+  <a href="/contact" className="flex items-center text-lg">
+    <FaPhone className="mr-3" /> Contact
+  </a>
+  <a href="/about-us" className="flex items-center text-lg">
+    <FaInfoCircle className="mr-3" /> About
+  </a>
+  <a href="/team" className="flex items-center text-lg">
+    <FaUsers className="mr-3" /> Our Team
+  </a>
+  <a href="/faq" className="flex items-center text-lg">
+    <FaQuestionCircle className="mr-3" /> FAQ
+  </a>
+  <a href="/pricing" className="flex items-center text-lg">
+    <FaDollarSign className="mr-3" /> Pricing
+  </a>
+  <a href="/how-it-works" className="flex items-center text-lg">
+    <FaTools className="mr-3" /> How It Works
+  </a>
+</div>;
       </div>
     </div>
 
