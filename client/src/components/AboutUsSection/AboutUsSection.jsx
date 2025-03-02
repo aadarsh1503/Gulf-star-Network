@@ -1,9 +1,20 @@
+import { useEffect } from "react";
 import About1 from "./About1";
 import ig from "./ig.jpg";
 import ServiceSection1 from "./ServiceSection1";
 import { useNavigate } from 'react-router-dom';
 
 const AboutUsSection = () => {
+  useEffect(() => {
+    // Body overflow hidden to stop right scroll
+    document.documentElement.style.overflowX = "hidden";
+    document.body.style.overflowX = "hidden";
+
+    return () => {
+      document.documentElement.style.overflowX = "auto";
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
     const navigate = useNavigate();
   return (
     <>

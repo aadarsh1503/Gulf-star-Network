@@ -8,7 +8,18 @@ import i5 from "./i5.png"
 import i6 from "./i6.png"
 import i7 from "./i7.png"
 import i8 from "./i8.png"
+import { useEffect } from 'react';
 const TeamSection1 = () => {
+  useEffect(() => {
+    // Body overflow hidden to stop right scroll
+    document.documentElement.style.overflowX = "hidden";
+    document.body.style.overflowX = "hidden";
+
+    return () => {
+      document.documentElement.style.overflowX = "auto";
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
   const teamMembers = [
     {
       name: 'Kristin Watson',

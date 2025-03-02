@@ -5,9 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import OfficeLocations from "./OfficeLocations";
 import ContactForm from "./ContactForm";
 import BahrainMap from "./BahrainMap";
+import { useEffect } from "react";
 
 
 const ContactUs = () => {
+  useEffect(() => {
+    // Body overflow hidden to stop right scroll
+    document.documentElement.style.overflowX = "hidden";
+    document.body.style.overflowX = "hidden";
+
+    return () => {
+      document.documentElement.style.overflowX = "auto";
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
     const navigate = useNavigate();
   return (
     <>
