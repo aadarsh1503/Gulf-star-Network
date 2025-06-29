@@ -14,6 +14,7 @@ import i2 from "./i2.webp"
 import i3 from "./i3.webp"
 import Slide1 from '../Slide1/Slide1';
 import Slide from '../Slide/Slide';
+import Slide2 from '../Slide2/Slide2';
 
 const LogisticsSection = () => {
   return (
@@ -141,7 +142,7 @@ const LogisticsSection = () => {
     <LogisticsProcess />
     <TeamSection />
     <TestimonialSlider />
-    <Slide />
+    <Slide2 />
     </>
   );
 };

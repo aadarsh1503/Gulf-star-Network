@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-black z-50 relative text-white py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap- px-6">
 
         {/* Logo and Description */}
         <div>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         {/* Our Services */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-semibold mb-4">Our Services</h3>
           <div className="w-10 border-b-2 border-yellow-500 mb-4"></div>
           <ul className="space-y-2">
@@ -37,10 +37,10 @@ const Footer = () => {
               <li key={service} className="hover:text-yellow-500 ">{service}</li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Quick Links */}
-        <div>
+        <div className="ml-20">
   <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
   <div className="w-10 border-b-2 border-yellow-500 mb-4"></div>
   <ul className="space-y-2">
@@ -51,6 +51,7 @@ const Footer = () => {
       { name: 'Team', url: '/team' },
       { name: 'Faq', url: '/faq' },
       { name: 'Pricing', url: '/pricing' },
+      { name: 'Contact', url: '/contact' },
     ].map((link) => (
       <li key={link.name}>
         <a
